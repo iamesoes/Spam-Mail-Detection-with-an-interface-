@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Asude & Esma</title>
+    <link rel="stylesheet" href="\static\css\main.css">
+    <link href="https://fonts.cdnfonts.com/css/san-marino-beach" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/hotabe" rel="stylesheet">
+                
+</head>
+<body>
+    <h2>Spam Mail Detection</h2>
+    
+    
+    <span><img src="/static/pictures/pngwing.com.png" width="100"></span>
+    
+    <br>
+   <form action = "mailController" method = "post"> 
+        {% for message in get_flashed_messages()%}
+            <p>{{message}}</p>
+        {%endfor%}
+        
+    
+
+        <br>
+        <input type="text" name="mail">
+        <br>
+        <input type="submit" value="Logistic Regression" id="sendButton">
+        <input type="submit" value="Naive Bayes" id="sendButton_0" formaction = "mailController_2">
+    </form> 
+    
+    <span> <p>Accuracy on training data: {{test_acc}}</p></span>
+
+    <span> <p>Accuracy on test data: {{test_acc}} </p></span>
+
+    <br>
+    <span style="color: aliceblue; font-family: 'Hotabe', sans-serif; font-size: 2.1em;">Esma Nur Ekmekci 20011620</span>
+    <span><img src="/static/pictures/XOsX.gif" width="100"></span>
+    <!-- <span><img src="/static/pictures/y5.gif" width="100"></span> -->
+    <span style="color: aliceblue; font-family: 'Hotabe', sans-serif; font-size: 2.1em;">Asude Merve Ekiz 20011623</span>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+body{
+    background-color: seagreen;
+    text-align: center;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-family: 'San Marino Beach', sans-serif;
+    font-size: 2.9em;
+    margin: 20px;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    font-family: 'Hotabe', sans-serif;
+    font-size: 2.1em;
+    margin: 20px;
+}
+
+
+
+p{
+    color: rgb(255, 255, 255);
+    font-family: 'San Marino Beach', sans-serif;
+    font-size: 1.4em;
+    margin: 20px;
+}
+
+input{
+    width: 550px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Hotabe', sans-serif;
+    font-size: 2.1em;
+}
+
+input:focus{
+    border: solid 5px #000000;
+}
+
+#sendButton,#sendButton_0{
+    background-color: aquamarine;
+    width: 200px;
+}
+
+#sendButton,#sendButton_0: hover{
+    background-color: rgb(146, 172, 163);
+    cursor: pointer;
+}
+
